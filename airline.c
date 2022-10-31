@@ -41,3 +41,33 @@ int main()
             }
                 arr[eseat - 1] = book;
         }
+                printf("Enter 1 for your boading pass : ");
+        scanf("%d", &pass);
+        if (pass == 1)
+        {
+            if (seat == 1)
+            {
+                printf("Your seat number is %d\nWe booked a business class seat for you", bseat);
+            }
+            if (seat == 2)
+            {
+                printf("Your seat number is %d\nWe booked a economy class seat for you", eseat);
+            }
+        }
+        for (int i = 0; i < 100; i++)
+        {
+            if (i % 10 == 0)
+            {
+                printf("\n");
+            }
+            printf("%d\t", arr[i]);
+        }
+        printf("\nTo Exit Press 1\nPress 2 to Continue\n");
+        scanf("%d", &end);
+        if (end == 1)
+        {
+            break;
+        }
+    }
+    return 0;
+}
